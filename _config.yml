@@ -2,7 +2,7 @@
 title: DB Europe
 email: 
 description: DB Europe > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: /dbeurope
 url: "" # the base hostname & protocol for your site
 
 twitter_username:
