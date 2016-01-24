@@ -60,11 +60,11 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 section.footer {
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 aside {
@@ -95,11 +95,11 @@ aside {
 // Navigation
 
 .navbar-fixed-top {
-    min-height: 80px;
+    min-height: 100px;
 }
 
 .navbar-header {
-    height: 80px;
+    height: 100px;
 }
 
 .bg-primary .text-muted {
@@ -121,14 +121,14 @@ aside {
             color: darken($theme-primary, 10%);
         }
         img {
-          height: 50px;
+          height: 65px;
         }
     }
     .nav {
         > li {
             > a,
             > a:focus {
-                line-height: 80px;
+                line-height: 100px;
                 padding-top: 0px;
                 padding-bottom: 0px;
                 text-transform: uppercase;
@@ -163,13 +163,13 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            line-height: 80px;
+            line-height: 100px;
             padding-top: 0px;
             padding-bottom: 0px;
-            color: rgba(white, .7);
+            color: $theme-dark;
             &:hover {
-                color: white;
-            }
+                color: $theme-primary;
+            }            
         }
         &.affix {
             background-color: white;
@@ -182,24 +182,17 @@ aside {
                     color: darken($theme-primary, 10%);
                 }
             }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-        }
-        &.affix-top {
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
         }
     }
+    @media (max-width: 767px) {
+        .nav > li > a,
+        .nav > li > a:focus {
+            line-height: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;       
+        }
+    }
+
 }
 
 // Homepage Header
