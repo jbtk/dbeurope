@@ -63,6 +63,12 @@ aside {
 .service-icon {
   height: 56px; }
 
+.clients img {
+  max-width: 100%;
+  height: 35px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
 .address .fa {
   width: 20px; }
 
@@ -114,6 +120,12 @@ aside {
     .navbar-default .nav > li.active > a:hover,
     .navbar-default .nav > li.active > a:focus:hover {
       background-color: transparent; }
+  .navbar-default.affix-top .nav > li > a:hover,
+  .navbar-default.affix-top .nav > li > a:focus:hover {
+    color: white; }
+  .navbar-default.affix-top .nav > li.active > a,
+  .navbar-default.affix-top .nav > li.active > a:focus {
+    color: white !important; }
   @media (min-width: 768px) {
     .navbar-default {
       background-color: transparent;
