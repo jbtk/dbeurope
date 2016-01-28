@@ -61,6 +61,12 @@ p {
 
 section {
     padding: 120px 0;
+    &.first {
+        padding-top: 180px;
+    }
+    &.doubled {
+        padding-bottom: 0px;
+    }
 }
 
 section.footer {
@@ -81,13 +87,33 @@ aside {
     height: 56px;
 }
 
+// Team
+
+.linked-in.fa {
+    color: #069;
+}
+
 // Clients
+
+.clients .box {
+    height: 85px;
+}
 
 .clients img {
     max-width: 100%;
     height: 35px;
     margin-top: 25px;
     margin-bottom: 25px;
+    &.bigger {
+        height: 55px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &.smaller {
+        height: 20px;
+        margin-top: 32px;
+        margin-bottom: 33px;
+    }
 }
 
 // Footer
@@ -160,26 +186,8 @@ aside {
             }
         }
     }
-    &.affix-top {
-        .nav {
-            > li {
-                > a,
-                > a:focus {
-                    &:hover {
-                        color: white;
-                    }
-                }
-                &.active {
-                    > a,
-                    > a:focus {
-                        color: white !important;
-                    }
-                }
-            }
-        }
-    }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: white;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
